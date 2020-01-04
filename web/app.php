@@ -1,7 +1,13 @@
 <?php
-session_set_cookie_params(300);
 session_start();
 
+if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 900)) 
+{
+    session_unset();     
+    session_destroy();  
+    session_start();
+}
+$_SESSION['LAST_ACTIVITY'] = time(); 
 
 require '../vendor/autoload.php';
 require_once '../Router.php';

@@ -18,7 +18,6 @@ class UserController
 
     public function login()
     {
-        session_regenerate_id();
         $message = '';
         $is_ok = true;
 
@@ -44,6 +43,7 @@ class UserController
             {
                 $_SESSION['login'] = $login;
                 $_SESSION['message'] = $message;
+                session_regenerate_id();
 
                 return new RedirectView('/', 303);
             }
@@ -62,8 +62,11 @@ class UserController
         unset($_SESSION['login']);
         $_SESSION['message'] = "Wylogowano <br>";
         $message = $_SESSION['message'];
+        
+        session_unset();   
         session_destroy();
         session_start();
+        session_set_cookie_params(10);
         $_SESSION['message']= $message;
 
         return new RedirectView('/login', 303);
