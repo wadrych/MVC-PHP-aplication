@@ -1,0 +1,452 @@
+:root {
+  --color-1: #5c6d70;
+  --color-2: #ebe9e9;
+  --color-3: #484a47;
+  --color-4: #3581b8;
+  --color-5: #fcb07e;
+  --color-6: #3391df;
+  --color-7: #fcb585;
+  --color-8: #ff686b;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-3);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-2);
+  margin: 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 890px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+header {
+  margin-top: 25px;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+nav.col-12 {
+  text-align: center;
+  padding: 0%;
+  width: 100%;
+  margin-top: 30px;
+  background-color: var(--color-4);
+}
+nav.col-12 ul {
+  display: inline-block;
+  padding-top: 5px;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+nav.col-12 ul li {
+  float: none;
+}
+
+nav.col-12 ul li a {
+  text-align: center;
+  padding: 14px 16px;
+  color: var(--color-2);
+  display: block;
+  text-decoration: none;
+}
+
+nav.col-12 ul li a:hover {
+  background-color: var(--color-6);
+  border-radius: 3px;
+  transition: 1s;
+}
+
+.active {
+  background-color: var(--color-6);
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--color-6);
+}
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  background-color: inherit;
+  color: var(--color-2);
+  font-family: inherit;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+#darkmode {
+  background-color: var(--color-3);
+  color: var(--color-2);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin-right: 15px;
+  float: none;
+  border: none;
+
+}
+
+
+#darkmode:hover {
+  background-color: var(--color-1);
+}
+
+
+.dropdown-content {
+  display: none;
+  min-width: 160px;
+  background-color: var(--color-4);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  color: var(--color-3);
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--color-5);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+article {
+  background-color: var(--color-2);
+  height: auto;
+  color: var(--color-3);
+}
+article div {
+  border-radius: 5px;
+  background-color: var(--color-5);
+  padding: 5px 15px;
+}
+
+.trainer {
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-2);
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type="submit"],
+input[type="reset"] {
+  background-color: var(--color-4);
+  color: var(--color-2);
+
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin-right: 15px;
+  float: right;
+  border: none;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: var(--color-6);
+}
+
+.row {
+  padding: 0px;
+}
+
+.container {
+  padding: 15px;
+  height: auto;
+}
+
+#contact {
+  height: auto;
+}
+
+form div.row div.col-3,
+form div.row div.col-9 {
+  padding: 3px 15px;
+}
+
+#line-space {
+  height: 1px;
+  padding: 0;
+}
+
+#line {
+  background-color: var(--color-1);
+  height: 2px;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  padding-top: 10px;
+  height: auto;
+  display: none;
+}
+
+.name {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 0;
+}
+
+.space {
+  display: none;
+}
+svg {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  nav.col-12 ul li {
+    float: left;
+  }
+  nav.col-12 ul {
+    width: auto;
+  }
+
+  img {
+    display: block;
+  }
+
+  .trainer {
+    height: 570px;
+  }
+  svg {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 890px) {
+  form div.row div.col-3,
+  form div.row div.col-9 {
+    padding: 15px;
+  }
+
+  .trainer {
+    height: 100%;
+  }
+  .space {
+    display: block;
+  }
+}
+
+.gallery {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.gallery:hover {
+  transform: scale(1.5);
+}
+p.foot::first-letter {
+  font-size: 150%;
+}
+
+#dialog{
+  display:none;
+}
+.ui-dialog {
+  background-color: var(--color-2);
+  text-align:center;
+  color:var(--color-2);
+  border-radius: 5px;
+  padding: 5px;
+}
+.ui-widget-header,
+.ui-state-default,
+.ui-button {
+  background-color: var(--color-4);
+  border: 1px solid var(--color-1);
+  color: var(--color-2);
+  font-weight: bold;
+}
+.ui-dialog-title{
+  display:none;
+}
+.ui-dialog-titlebar{
+  border-radius: 5px;
+}
+.ui-dialog-contetnt{
+ display:block;
+}
+.ui-button {
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 0;
+  float: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  border-radius: 0;
+}
+
+.btn {
+  font-size: 16px;
+  background-color: var(--color-4);
+  color: var(--color-2);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin-right: 15px;
+  float: right;
+  border: none;
+  text-decoration: none;
+
+}
+
+.btn:hover {
+  background-color: var(--color-6);
+}
+
+
+.pagination-container {
+  text-align: center;
+}
+.pagination {
+  display: inline-block;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.warning{
+  background-color: var(--color-8);
+  padding-left: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 15px;
+  border-radius: 5px;
+}
