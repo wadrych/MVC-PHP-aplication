@@ -4,7 +4,7 @@ class MainView
 {
     public function render()
     {
-        include "../layouts/index.html";
+        include "../layouts/index.php";
     }
 }
 
@@ -12,7 +12,7 @@ class ExercisesView
 {
     public function render()
     {
-        include "../layouts/exercises.html";
+        include "../layouts/exercises.php";
     }
 }
 
@@ -20,6 +20,6 @@ class ContactView
 {
     public function render()
     {
-        include "../layouts/contact.html";
+        include "../layouts/contact.php";
     }
 }
