@@ -35,6 +35,8 @@ class UserController
             $message .= "Brak hasła <br>";
         }
 
+
+
         if($is_ok)
         {
             $user = UserService::search($login);
@@ -85,10 +87,10 @@ class UserController
         }
 
         $email = $_POST['email'];
-        if($email == '')
+        if($email == '' || !filter_var($email, FILTER_VALIDATE_EMAIL))
         {
             $is_ok = false;
-            $message .= "Brak emailu <br>";
+            $message .= "Nie poprawny email <br>";
         }
 
         $password = $_POST['password'];

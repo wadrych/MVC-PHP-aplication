@@ -71,7 +71,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 890px) {
+@media only screen and (min-width: 1180px) {
   .col-1 {
     width: 8.33%;
   }
@@ -449,4 +449,9 @@ p.foot::first-letter {
   padding-bottom: 0px;
   padding-right: 15px;
   border-radius: 5px;
+}
+
+.gallery_1{
+  width: max-content;
+  margin:auto;
 }

@@ -58,9 +58,9 @@
           </div>
           <?php  foreach($images as $image): ?>
           <article class="col-4 col-s-6">
-            <div>
+            <div class="pic_holder">
               <a href="/images/watermark_<?php echo $image->id .  '.' . $image->format; ?>">
-                <img src="/images/thumbnail_<?php echo $image->id .  '.' . $image->format; ?>"></img>
+                <img class="gallery_1" src="/images/thumbnail_<?php echo $image->id .  '.' . $image->format; ?>"></img>
               </a>
               <p>
                 <?php echo $image->name ?> - <?php echo $image->author ?>
