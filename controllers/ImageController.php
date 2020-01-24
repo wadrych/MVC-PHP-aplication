@@ -9,7 +9,7 @@ class ImageController
 {
     public function index()
     {
-        //ImageService::delete_image('5e13a3366e955243a7021b22');
+        //ImageService::delete_image('5e2b491e6e955245fa1c6072');
         $index = 1;
         if(isset($_SESSION['page']))
         { 

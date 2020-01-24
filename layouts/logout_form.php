@@ -53,6 +53,23 @@
       </div>
       <div class="col-2  space" style="height:100px"></div>
       <div class="col-2 space"></div>
+        <?php 
+            if($message != "")
+            {
+              echo '
+              <article class="col-8 col-s-12">
+                <div class="col-12 warning" >
+                    <p>'
+                        .$message. 
+                    '</p>    
+                </div>
+              </article>
+              <div class="col-2  space" ></div>
+              </div>
+              <div class="col-12 row">
+              <div class="col-2 space"></div>';
+            }
+        ?>
       <article class="col-8 col-s-12">
         <div class="container">
           <form id="logout"  action="../login/logout" method="POST" enctype="multipart/form-data">

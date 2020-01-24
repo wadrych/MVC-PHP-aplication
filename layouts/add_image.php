@@ -80,19 +80,19 @@
                             Znak wodny
                         </div>
                         <div class="col-9">
-                            <input type="text" name="watermark" id="watermark" value="test">
+                            <input type="text" name="watermark" id="watermark" value="">
                         </div>
                         <div class="col-3">
                             Tytuł
                         </div>
                         <div class="col-9">
-                            <input type="text" name="name" id="name" value="test">
+                            <input type="text" name="name" id="name" value="">
                         </div>
                         <div class="col-3">
                             Autor
                         </div>
                         <div class="col-9">
-                            <input type="text" name="author" id="author" value="test">
+                            <input type="text" name="author" id="author" value="">
                         </div>
                         <div class="col-3">
                             Plik

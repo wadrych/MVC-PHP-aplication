@@ -44,10 +44,12 @@ class UserController
             if(isset($user) && password_verify($password, $user['password']))
             {
                 $_SESSION['login'] = $login;
+                $message .= "Logowanie powiodło się!<br>";
                 $_SESSION['message'] = $message;
+                
                 session_regenerate_id();
 
-                return new RedirectView('/', 303);
+                return new RedirectView('/login', 303);
             }
             else
             {
@@ -68,7 +70,6 @@ class UserController
         session_unset();   
         session_destroy();
         session_start();
-        session_set_cookie_params(10);
         $_SESSION['message']= $message;
 
         return new RedirectView('/login', 303);
@@ -123,6 +124,5 @@ class UserController
 
         return new RedirectView('/login', 303);
     }
-
 
 }
